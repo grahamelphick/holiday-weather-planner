@@ -1,0 +1,16 @@
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.p {
+  line-height: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+  color: rgb(190, 231, 233);
+}
+
+
