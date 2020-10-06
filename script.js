@@ -4,7 +4,7 @@ $(document).ready(function () {
     //console.log("hello World");
 
     //API Key
-    var apiKey = "AIzaSyD51Xnuhy0Fa--8C553LeKhC0F-ZywEDDE"
+    var apiKey = "hidden"
 
     let locationName = document.getElementById("locationInput");
 
