@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/landing-page-style.css">
     <title>Home Page</title>
 </head>
 
+
 <body>
-    <header style="background-color: grey;"">
+    <header style="background-color: grey;">
         <button style=" text-align: left;">Home Btn</button>
         <h1 style="text-align: center; font-size: 45px;">App Name</h1>
         <h2 style="text-align: center; font-size: 25px;">Plan Your Perfect Day</h2>
@@ -21,14 +23,23 @@
         </p>
         <input id="WhatText" placeholder="Enter Destination">
         <br><br>
+
         <br><br>
         <input class="searchbtn" type="submit" value="Search">
+
         </form>
         <div id="results"></div>
     </div>
 
     <script src="locationajax.js"></script>
     </div>
+    <div id="results">
+        
+    </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
 
 </html>
