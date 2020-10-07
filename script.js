@@ -11,6 +11,9 @@ $(document).ready(function () {
     //var action = "/discover/explore"
     //var URL = baseURL + action + "?cat=sights-museums&at=52.531,13.3843&apiKey=" + apiKey
 
+    //Write Code to Geolocation of User and then = at
+
+    //
 
     function requestData(what) {
         $.ajax({
@@ -19,7 +22,8 @@ $(document).ready(function () {
             data: {
                 at: '52.5159,13.3777',
                 cat: what,
-                apiKey: 'fQl4uruJbRL1M63hlwlIHhzLJM-rEFeK6InNrpXx5o0'
+                apiKey: '-svaY28TziQvERQtErWdRG4N5KBUlJ4npN36uBx92V0'
+               
             },
             beforeSend: function (xhr) {
                 xhr.setRequestHeader('Accept', 'application/json');
@@ -33,10 +37,9 @@ $(document).ready(function () {
 
 
     function populateResults(data) {
-        html= "";
-        console.log(data);
+        html = "";
         data.results.items.forEach(element => {
-            html+=element.title+"<br>";
+            html += element.title + "<br>";
         });
         $("#results").html(html)
     }
@@ -53,3 +56,6 @@ $(document).ready(function () {
 
 
 
+//Third API" Convert Google Map"
+//Browser Location to get UserLocation
+//Offer User Buttons for Activities
