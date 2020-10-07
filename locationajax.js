@@ -1,10 +1,31 @@
 //Loction API
 
 $(document).ready(function () {
-    //console.log("hello World");
 
-    //API Key
-    //var apiKey = "fQl4uruJbRL1M63hlwlIHhzLJM-rEFeK6InNrpXx5o0"
+    //Get Geolocation of the User
+
+    var options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+      };
+      
+      function success(pos) {
+        var crd = pos.coords;
+      
+        console.log('Your current position is:');
+        console.log(`Latitude : ${crd.latitude}`);
+        console.log(`Longitude: ${crd.longitude}`);
+        console.log(`More or less ${crd.accuracy} meters.`);
+      }
+      
+      function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+      }
+      
+      navigator.geolocation.getCurrentPosition(success, error, options);
+
+    //API Key: "svaY28TziQvERQtErWdRG4N5KBUlJ4npN36uBx92V0"
 
     //var baseURL = "https://places.ls.hereapi.com/places/v1"
 
@@ -23,7 +44,6 @@ $(document).ready(function () {
                 at: '52.5159,13.3777',
                 cat: what,
                 apiKey: '-svaY28TziQvERQtErWdRG4N5KBUlJ4npN36uBx92V0'
-               
             },
             beforeSend: function (xhr) {
                 xhr.setRequestHeader('Accept', 'application/json');
