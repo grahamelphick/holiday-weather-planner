@@ -1,10 +1,8 @@
 
-nav .brand-logo {
-  color: #444;
-}
-
-.header-button {
+header {
   padding: 10px;
+  color: black;
+  background-color: #70B0C4
 }
 
 p {
