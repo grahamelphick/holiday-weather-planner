@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
 
+    var where = ""
     //Get Geolocation of the User
 
     var options = {
@@ -16,9 +17,8 @@ $(document).ready(function () {
         //console.log('Your current position is:');
         console.log(`Latitude : ${crd.latitude}`);
         console.log(`Longitude: ${crd.longitude}`);
-        var where = crd.latitude + "," + crd.longitude;
+        where = crd.latitude + "," + crd.longitude;
         console.log(where);
-        
         
       }
       
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     //Write Code to Geolocation of User and then = at
 
-    //
+    //LOCATION API == HERE PLACES API
 
     function requestData(what,where) {
         $.ajax({
@@ -71,8 +71,8 @@ $(document).ready(function () {
     $(".searchbtn").on("click", function () {
         console.log("btn clicked");
         var what = $("#WhatText").val();
-        console.log(what);
-        requestData(what);
+        console.log(what,where);
+        requestData(what,where);
     });
 
 })
