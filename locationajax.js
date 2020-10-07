@@ -13,10 +13,13 @@ $(document).ready(function () {
       function success(pos) {
         var crd = pos.coords;
       
-        console.log('Your current position is:');
+        //console.log('Your current position is:');
         console.log(`Latitude : ${crd.latitude}`);
         console.log(`Longitude: ${crd.longitude}`);
-        console.log(`More or less ${crd.accuracy} meters.`);
+        var where = crd.latitude + "," + crd.longitude;
+        console.log(where);
+        
+        
       }
       
       function error(err) {
@@ -36,12 +39,12 @@ $(document).ready(function () {
 
     //
 
-    function requestData(what) {
+    function requestData(what,where) {
         $.ajax({
             url: 'https://places.ls.hereapi.com/places/v1/discover/explore',
             type: 'GET',
             data: {
-                at: '52.5159,13.3777',
+                at: where,
                 cat: what,
                 apiKey: '-svaY28TziQvERQtErWdRG4N5KBUlJ4npN36uBx92V0'
             },
