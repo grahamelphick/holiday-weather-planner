@@ -17,7 +17,7 @@ $(document).ready(function () {
         //console.log('Your current position is:');
         console.log(`Latitude : ${crd.latitude}`);
         console.log(`Longitude: ${crd.longitude}`);
-        where = crd.latitude + "," + crd.longitude;
+        where = crd.latitude + "," + crd.longitude + ";r=30000";
         console.log(where);
         
       }
