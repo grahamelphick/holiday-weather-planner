@@ -2,31 +2,34 @@
 
 $(document).ready(function () {
 
-    var where = ""
     //Get Geolocation of the User
+    //Open Where Variable
+    var where = ""
 
     var options = {
         enableHighAccuracy: true,
         timeout: 5000,
         maximumAge: 0
-      };
-      
-      function success(pos) {
+    };
+
+    //function for retrieving the geodata from the User
+    //Successful
+    function success(pos) {
         var crd = pos.coords;
-      
-        //console.log('Your current position is:');
         console.log(`Latitude : ${crd.latitude}`);
         console.log(`Longitude: ${crd.longitude}`);
-        where = crd.latitude + "," + crd.longitude;
+        where = crd.latitude + "," + crd.longitude + ";r=30000";
         console.log(where);
-        
-      }
-      
-      function error(err) {
+
+    }
+    //Unsuccessful
+    function error(err) {
         console.warn(`ERROR(${err.code}): ${err.message}`);
-      }
-      
-      navigator.geolocation.getCurrentPosition(success, error, options);
+        alert("Sorry, this app requires your location to work. Please allow access to your location.");
+        window.location.reload();
+    }
+    navigator.geolocation.getCurrentPosition(success, error, options);
+
 
     //API Key: "svaY28TziQvERQtErWdRG4N5KBUlJ4npN36uBx92V0"
 
@@ -39,7 +42,7 @@ $(document).ready(function () {
 
     //LOCATION API == HERE PLACES API
 
-    function requestData(what,where) {
+    function requestData(what, where) {
         $.ajax({
             url: 'https://places.ls.hereapi.com/places/v1/discover/explore',
             type: 'GET',
@@ -61,19 +64,22 @@ $(document).ready(function () {
 
     function populateResults(data) {
         html = "";
-        data.results.items.forEach(element => {
+        data.results.items.slice(0, 10).forEach(element => {
             html += element.title + "<br>";
         });
         $("#results").html(html)
     }
 
-    //On Click function for starting the search based on input
-    $(".searchbtn").on("click", function () {
+    //On Click functions for starting the search
+
+    //Museum
+    $(".filterBtn").on("click", function () {
         console.log("btn clicked");
-        var what = $("#WhatText").val();
-        console.log(what,where);
-        requestData(what,where);
+        var what = this.textContent;
+        console.log(what, where);
+        requestData(what, where);
     });
+
 
 })
 
