@@ -7,6 +7,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,7 +16,8 @@
 
 <body>
     <header>
-        <button style=" text-align: left;font-size: 20px; background-color: rgb(158, 221, 236)"><strong>Home Btn</strong></button>
+        <button style=" text-align: left;font-size: 20px; background-color: rgb(158, 221, 236)"><strong>Home
+                Btn</strong></button>
         <h1 style="text-align: center; font-size: 45px;">App Name</h1>
         <h2 style="text-align: center; font-size: 25px;">Plan Your Perfect Day</h2>
     </header>
@@ -25,13 +27,25 @@
             name of app]! We use the weather forecast to find your ideal tours,
             attractions or entertainment to make your life just a little bit easier.
         </p>
-        <input id="WhatText" placeholder="Enter Destination">
         <br><br>
         <br><br>
-        <input class="searchbtn" type="submit" value="Search">
-        <a class="waves-effect waves-light btn">Button</a>
-        </form>
-        <div id="results"></div>
+        <div id="weather-results"></div>
+        <div id="category-buttons">
+            <img id="nature-img">
+            <button id="nature-btn">Nature</button>
+            <br><br>
+            <img id="outdoor-recreation-icon">
+            <button id="outdoor-recreation-button">Outdoor Recreation</button>
+            <br><br>
+            <img id="museum-icon">
+            <button id="museum-btn">Museums</button>
+            <br><br>
+            <img id="tourist-attractions-icon">
+            <button id="tourist-attractions-btn">Tourist Attractions</button>
+            <br><br>
+            <img id="entertainment-icon">
+            <button id="entertainment-btn">Entertainment</button>
+        </div>
     </div>
 
     <script src="locationajax.js"></script>
