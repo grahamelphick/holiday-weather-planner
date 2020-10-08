@@ -75,7 +75,7 @@ $(document).ready(function () {
     //Museum
     $(".filterBtn").on("click", function () {
         console.log("btn clicked");
-        var what = this.value
+        var what = this.textContent;
         console.log(what, where);
         requestData(what, where);
     });
