@@ -20,7 +20,7 @@ $(document).ready(function () {
         console.log(`Longitude: ${crd.longitude}`);
         where = crd.latitude + "," + crd.longitude + ";r=30000";
         console.log(where);
-
+        searchLocationWeather(crd.latitude, crd.longitude)
     }
     //Unsuccessful
     function error(err) {

@@ -22,6 +22,14 @@
         <h2 style="text-align: center; font-size: 25px;">Plan Your Perfect Day</h2>
     </header>
 
+    <div class="container-weather-display">
+        <div>
+            <div class="currentDate"></div>
+            <img class="weatherIcon"></img>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+        </div>
+    </div>
     <div style="text-align: center; margin-left: 300px; margin-right: 300px;">
         <p style="font-size: 20px;">Plan your perfect itinerary with [insert
             name of app]! We use the weather forecast to find your ideal tours,
@@ -41,19 +49,21 @@
             <button class="filterBtn" id="museum-btn">Museum</button>
             <br><br>
             <img id="tourist-attractions-icon">
-            <button  class="filterBtn" id="tourist-attractions-btn">Landmark-Attraction</button>
+            <button class="filterBtn" id="tourist-attractions-btn">Landmark-Attraction</button>
             <br><br>
             <img id="entertainment-icon">
-            <button  class="filterBtn" id="entertainment-btn">Restaurant</button>
+            <button class="filterBtn" id="entertainment-btn">Restaurant</button>
         </div>
         <br>
         <br>
         <div id="results"></div>
 
     </div>
-
+    <script src="weather.js"></script>
     <script src="buttonLocation.js"></script>
-   
+
+
+
 </body>
 
 </html>
