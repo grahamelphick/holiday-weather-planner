@@ -74,11 +74,32 @@ $(document).ready(function () {
 
 
     function populateResults(data) {
-        html = "";
+        var placeID = data.results.items[0].id;
+        // var html = "";
         data.results.items.slice(0, 10).forEach(element => {
-            html += element.title + "<br>";
+            var placeID = element.id
+            var queryLink = "https://wego.here.com/australia/perth/sights-museums/scitech-discovery-centre--" + placeID + "?map=-31.94284,115.84912,15,normal"
+            var anchorLink = $("<a>")
+            anchorLink.text(element.title)
+            anchorLink.attr("href", queryLink);
+            anchorLink.attr("target", "_blank");
+            anchorLink.append($("<br>"));
+            $("#results").append(anchorLink);
+            // $( ".inner" ).append( "<p>Test</p>" );
+
+            // $("#results").append($("<a>").val(element.title).attr("href", queryLink));
+            // html += $("<a>").val(element.title).attr("href", queryLink);
         });
-        $("#results").html(html)
+        // $("#results").html(html)
+        // var placeLat = data.results.items[0].position[0];
+        // var placeLong = data.results.items[0].position[1];
+        // var
+        // data.results.items.slice(0, 10).forEach("click", function () {
+        //     var queryLink = "https://wego.here.com/australia/perth/sights-museums/scitech-discovery-centre--" + placeID + "?map=-31.94284,115.84912,15,normal"
+        //     $("<a>").val(queryLink);
+        // })
+           
+        
     }
 
     //On Click functions for starting the search
