@@ -20,8 +20,7 @@ body {
   display: flex;
   justify-content: center;
   font-size: large;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+  font-family: Georgia, 'Times New Roman', Times, serif
 
 .modal-content {
   text-align: center;
@@ -37,4 +36,3 @@ header {
     background-image: url(Enjoyment.jpg);
 }
 
-.
