@@ -19,9 +19,11 @@
             console.log(response);
             
             $(".weatherIcon").attr("src", createIconUrl(response.weather[0].icon));
+            var desc = response.weather[0].description;
+            desc = desc.charAt(0).toUpperCase() + desc.slice(1)
+            $(".description").text(desc);
             $(".locationName").text("Location: " + response.name);
-            $(".currentDate").html(moment(response.dt_txt).format('dddd Do MMMM YYYY'));
-            //$(".description").text(response.weather[0].description)); 
+            $(".currentDate").html(moment(response.dt_txt).format('dddd Do MMMM YYYY'));  
             $(".humidity").text("Humidity: " + response.main.humidity + " %");
             $(".temp").text("Temperature: " + (response.main.temp-273.15).toFixed(2)+" °C");
         });
