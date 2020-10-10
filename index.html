@@ -7,35 +7,73 @@
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 
 <body>
     <header>
-        <button style=" text-align: left;font-size: 20px; background-color: rgb(158, 221, 236)"><strong>Home Btn</strong></button>
+        <button style=" text-align: left;font-size: 20px; background-color: rgb(158, 221, 236)"><strong>Home
+                Btn</strong></button>
         <h1 style="text-align: center; font-size: 45px;">App Name</h1>
         <h2 style="text-align: center; font-size: 25px;">Plan Your Perfect Day</h2>
     </header>
 
-    <div style="text-align: center; margin-left: 300px; margin-right: 300px;">
-        <p style="font-size: 20px;">Plan your perfect itinerary with [insert
-            name of app]! We use the weather forecast to find your ideal tours,
-            attractions or entertainment to make your life just a little bit easier.
-        </p>
-        <input id="WhatText" placeholder="Enter Destination">
-        <br><br>
-        <br><br>
-        <input class="searchbtn" type="submit" value="Search">
-        <a class="waves-effect waves-light btn">Button</a>
-        </form>
-        <div id="results"></div>
+    <div class="container-weather-display">
+        <div>
+            <div class="currentDate"></div>
+            <img class="weatherIcon"></img>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Something went wrong!</h4>
+            <br>
+            <p id="location-required-msg">Sorry, this app requires your location to work. Please allow access to your location.</p>
+        </div>
+        <div id="agreebtn" class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
     </div>
 
-    <script src="locationajax.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <div style="text-align: center; margin-left: 300px; margin-right: 300px;">
+            <p style="font-size: 20px;">Plan your perfect itinerary with [insert
+                name of app]! We use the weather forecast to find your ideal tours,
+                attractions or entertainment to make your life just a little bit easier.
+            </p>
+            <br><br>
+            <br><br>
+            <div id="weather-results"></div>
+            <div id="category-buttons">
+                <img id="nature-img">
+                <button class="filterBtn" id="nature-btn">natural-geographical</button>
+                <br><br>
+                <img id="outdoor-recreation-icon">
+                <button class="filterBtn" id="outdoor-recreation-button">leisure-outdoor</button>
+                <br><br>
+                <img id="museum-icon">
+                <button class="filterBtn" id="museum-btn">Museum</button>
+                <br><br>
+                <img id="tourist-attractions-icon">
+                <button class="filterBtn" id="tourist-attractions-btn">Landmark-Attraction</button>
+                <br><br>
+                <img id="entertainment-icon">
+                <button class="filterBtn" id="entertainment-btn">Restaurant</button>
+            </div>
+            <br>
+            <br>
+            <div id="results"></div>
+
+        </div>
+
+        <script src="weather.js"></script>
+        <script src="buttonLocation.js"></script>
 </body>
 
 </html>
