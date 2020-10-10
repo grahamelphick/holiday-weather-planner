@@ -2,8 +2,14 @@
 
 $(document).ready(function () {
 
+    //Var Declaration
+    var resultDiv= document.getElementById("results")
+    //console.log(resultDiv);
+    var introDiv= document.getElementById("intro")
+    //console.log(introDiv);
+
+
     //Get Geolocation of the User
-    //Open Where Variable
     var where = ""
 
     var options = {
@@ -76,10 +82,9 @@ $(document).ready(function () {
     }
 
     //On Click functions for starting the search
-
-    //Museum
     $(".filterBtn").on("click", function () {
         console.log("btn clicked");
+        introDiv.style.display = "none";
         var what = this.textContent;
         console.log(what, where);
         requestData(what, where);
@@ -89,7 +94,5 @@ $(document).ready(function () {
 })
 
 
-
-//Third API" Convert Google Map"
-//Browser Location to get UserLocation
-//Offer User Buttons for Activities
+//Results Display
+//HTML
