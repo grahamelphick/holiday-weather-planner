@@ -19,10 +19,10 @@
             console.log(response);
 
             
-            $(".currentDate").html(moment(response.dt_txt).format('dddd MMMM Do YYYY'));
+            $(".currentDate").html(moment(response.dt_txt).format('dddd Do MMMM YYYY'));
             $(".weatherIcon").attr("src", createIconUrl(response.weather[0].icon));
-            $(".humidity").text("Humidity: " + response.main.humidity);
-            $(".temp").text("temp: " + (response.main.temp-273.15).toFixed(2)+"C");
+            $(".humidity").text("Humidity: " + response.main.humidity + " %");
+            $(".temp").text("Temperature: " + (response.main.temp-273.15).toFixed(2)+" °C");
         });
 
     };
