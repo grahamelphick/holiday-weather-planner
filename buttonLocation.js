@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 
     function populateResults(data) {
-        var placeID = data.results.items[0].id;
+        // var placeID = data.results.items[0].id;
         // var html = "";
         data.results.items.slice(0, 10).forEach(element => {
             var placeID = element.id
