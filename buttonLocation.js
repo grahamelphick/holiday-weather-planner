@@ -85,6 +85,7 @@ $(document).ready(function () {
             anchorLink.attr("href", queryLink);
             anchorLink.attr("target", "_blank");
             anchorLink.append($("<br>"));
+            anchorLink.append($("<br>"));
             $("#results").append(anchorLink);
             // $( ".inner" ).append( "<p>Test</p>" );
 
