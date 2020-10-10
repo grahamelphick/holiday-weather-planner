@@ -1,13 +1,12 @@
 
-header {
-  padding: 10px;
-  color: black;
-  background-color: #70B0C4
-}
 
 body {
+<<<<<<< HEAD
+  background-color: grey;
+=======
   background-color: rgb(208, 234, 243);
   margin-bottom: 200px;
+>>>>>>> a281e32edae0e6364d99ec58209fc4d021d6610f
 }
 
 .container-weather-display {
@@ -31,7 +30,25 @@ body {
   font-family: sans-serif;
 }
 
+
 header {
-    background-image: url(Enjoyment.jpg);
+    background-image: url(assets/images/background.jpg);
+    background-position: center;
+    text-align: center;
+    padding: 150px;
+    position: relative;
+    width: 100%;
+    
+
+}
+
+#headertext {
+  color: white;
+  text-shadow: 2px 5px 5px black, 0 0 25px brown, 0 0 5px orange;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
