@@ -5,13 +5,9 @@ header {
   background-color: #70B0C4
 }
 
-p {
-  line-height: 2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 body {
   background-color: rgb(208, 234, 243);
+  margin-bottom: 400px;
 }
 
 .container-weather-display {
@@ -37,4 +33,10 @@ header {
     background-image: url(Enjoyment.jpg);
 }
 
-.
+.id.category-buttons{
+  margin-bottom: 200px;
+}
+
+body-margin {
+  margin-bottom: 200px;
+}
