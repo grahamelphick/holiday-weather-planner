@@ -13,22 +13,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Script JS-->
+    <script src="weather.js"></script>
+    <script src="buttonLocation.js"></script>
 </head>
 
 
 <body>
 
-    <div class="wrapper">
-        <div class="container">
-            <!--Header with Name of the App-->
-            <div class="row">
-                <header>
-                    <div id="headertext">
-                        <h1>App Name</h1>
-                        <h2>Plan Your Perfect Day</h2>
-                    </div>
-                </header>
-            </div>
+    <!--Weather Display-->
+    <div class="container-weather-display">
+        <div>
+            <img class="weatherIcon"></img>
+            <div class="description"></div>
+            <div class="locationName"></div>
+            <div class="currentDate"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+        </div>
 
             <!--Weather Display-->
             <div class="row"class="container-weather-display">
@@ -69,29 +71,27 @@
 
             </div>
 
-            <!--Category Btn -->
-            <div id="category-buttons" style="text-align: center; margin-left: 300px; margin-right: 300px;">
-                <img id="nature-img">
-                <img src=.\assets\images\Natural-Geographical.jpg width="400" height="300"><br>
-                <button class="filterBtn" id="nature-btn">Natural-Geographical</button>
-                <br><br>
-                <img id="outdoor-recreation-icon">
-                <img src=.\assets\images\Leisure-Outdoor.jpg width="400" height="300"><br>
-                <button class="filterBtn" id="outdoor-recreation-button">Leisure-Outdoor</button>
-                <br><br>
-                <img id="museum-icon">
-                <img src="insidemusem.jpg" width="400" height="300"><br>
-                <button class="filterBtn" id="museum-btn">Museum</button>
-                <br><br>
-                <img id="tourist-attractions-icon">
-                <img src="landmark.jpg" width="400" height="300"><br>
-                <button class="filterBtn" id="tourist-attractions-btn">Landmark-Attraction</button>
-                <br><br>
-                <img id="entertainment-icon">
-                <img src="restaurant.jpg" width="400" height="300"><br>
-                <button class="filterBtn" id="entertainment-btn">Restaurant</button>
-            </div>
-        </div>
+    <!--Category Btn -->
+    <div id="category-buttons" style="text-align: center; margin-left: 300px; margin-right: 300px;">
+        <img id="nature-img">
+        <img src=.\assets\images\Natural-Geographical.jpg width="500" height="300"><br>
+        <button class="filterBtn" id="nature-btn">Natural-Geographical</button>
+        <br><br>
+        <img id="outdoor-recreation-icon">
+        <img src=.\assets\images\Leisure-Outdoor.jpg width="500" height="300"><br>
+        <button class="filterBtn" id="outdoor-recreation-button">Leisure-Outdoor</button>
+        <br><br>
+        <img id="museum-icon">
+        <img src="insidemusem.jpg" width="500" height="300"><br>
+        <button class="filterBtn" id="museum-btn">Museum</button>
+        <br><br>
+        <img id="tourist-attractions-icon">
+        <img src="landmark.jpg" width="500" height="300"><br>
+        <button class="filterBtn" id="tourist-attractions-btn">Landmark-Attraction</button>
+        <br><br>
+        <img id="entertainment-icon">
+        <img src="restaurant.jpg" width="500" height="300"><br>
+        <button class="filterBtn" id="entertainment-btn">Restaurant</button>
     </div>
 
 

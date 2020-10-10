@@ -1,12 +1,12 @@
 
 
-p {
-  line-height: 2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 body {
+<<<<<<< HEAD
   background-color: grey;
+=======
+  background-color: rgb(208, 234, 243);
+  margin-bottom: 200px;
+>>>>>>> a281e32edae0e6364d99ec58209fc4d021d6610f
 }
 
 .container-weather-display {
@@ -14,9 +14,11 @@ body {
   border-style: groove;
   display: flex;
   justify-content: center;
-  font-size: large;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+  
 
 .modal-content {
   text-align: center;

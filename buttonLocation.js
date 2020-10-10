@@ -74,15 +74,17 @@ $(document).ready(function () {
 
 
     function populateResults(data) {
-        var placeID = data.results.items[0].id;
+        // var placeID = data.results.items[0].id;
         // var html = "";
+        $("#results").empty()
         data.results.items.slice(0, 10).forEach(element => {
-            var placeID = element.id
-            var queryLink = "https://wego.here.com/australia/perth/sights-museums/scitech-discovery-centre--" + placeID + "?map=-31.94284,115.84912,15,normal"
-            var anchorLink = $("<a>")
-            anchorLink.text(element.title)
+            var placeID = element.id;
+            var queryLink = "https://wego.here.com/australia/perth/sights-museums/scitech-discovery-centre--" + placeID + "?map=-31.94284,115.84912,15,normal";
+            var anchorLink = $("<a>");
+            anchorLink.text(element.title);
             anchorLink.attr("href", queryLink);
             anchorLink.attr("target", "_blank");
+            anchorLink.append($("<br>"));
             anchorLink.append($("<br>"));
             $("#results").append(anchorLink);
             // $( ".inner" ).append( "<p>Test</p>" );
