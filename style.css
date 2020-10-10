@@ -7,7 +7,7 @@ header {
 
 body {
   background-color: rgb(208, 234, 243);
-  margin-bottom: 400px;
+  margin-bottom: 200px;
 }
 
 .container-weather-display {
@@ -33,10 +33,3 @@ header {
     background-image: url(Enjoyment.jpg);
 }
 
-.id.category-buttons{
-  margin-bottom: 200px;
-}
-
-body-margin {
-  margin-bottom: 200px;
-}
