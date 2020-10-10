@@ -13,3 +13,22 @@ p {
 body {
   background-color: rgb(208, 234, 243);
 }
+
+.container-weather-display {
+  padding: 80px;
+  border-style: groove;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.modal-content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#location-required-msg {
+  font-size: 18px;
+  font-family: sans-serif;
+}
