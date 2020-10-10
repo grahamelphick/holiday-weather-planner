@@ -84,7 +84,5 @@ $(document).ready(function () {
 })
 
 
-
-//Third API" Convert Google Map"
-//Browser Location to get UserLocation
-//Offer User Buttons for Activities
+//Results Display
+//HTML
