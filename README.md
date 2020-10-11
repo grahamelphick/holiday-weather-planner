@@ -7,6 +7,7 @@ Application that generates the current weather and displays activities based on 
 * [Technologies](#Technologies)
 * [Screenshot](#Screenshot)
 * [Setup](#Setup)
+* [App Link] (#App Link)
 * [Improvement](#Improvement)
 
 
@@ -59,6 +60,10 @@ Each of this categories gives the user a selection of at most 10 different activ
 
 <br>
 
+### To view the App, please click on the link below
+
+[Rain or Shine App](https://grahamelphick.github.io/holiday-weather-planner/)
+
 
 ### Improvement
 
@@ -70,6 +75,3 @@ Each of this categories gives the user a selection of at most 10 different activ
 * Results being only displayed when open
 
 
-## To view the App, please click on the link below
-
-[view my app here](https://grahamelphick.github.io/holiday-weather-planner/)
