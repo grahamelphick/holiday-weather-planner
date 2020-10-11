@@ -3,10 +3,13 @@
 $(document).ready(function () {
 
     //Var Declaration
-    var resultDiv= document.getElementById("results")
+    var resultDiv= document.getElementById("results");
     //console.log(resultDiv);
     var introDiv= document.getElementById("intro")
     //console.log(introDiv);
+
+
+    resultDiv.style.display = "none";
 
 
     //Get Geolocation of the User
@@ -111,6 +114,8 @@ $(document).ready(function () {
         var what = this.textContent;
         console.log(what, where);
         requestData(what, where);
+        if (resultDiv.style.display === "none") {
+            resultDiv.style.display = "block";}
     });
 
 

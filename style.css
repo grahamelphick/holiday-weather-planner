@@ -2,12 +2,15 @@
 .container {
   background-color:silver;
   height: 100%;
+  width: 100%;
   padding-top: 20px;
   
 }
 
 .wrapper {
-  background-color: lightslategray;
+  background-color: rgb(5, 21, 37);
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -17,6 +20,7 @@
   font-size: 20px;
   background-color: darkgrey !important;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 25px;
 }
   
 
@@ -37,17 +41,22 @@ header {
     text-align: center;
     padding: 150px;
     position: relative;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
     
 }
 
 #headertext {
   color: white;
-  text-shadow: 2px 2px 2px black, 0 0 25px mistyrose, 0 0 5px darkgreen;
+  text-shadow: 2px 2px 2px black, 0 0 25px mistyrose, 0 0 5px salmon;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-color: hsla(120, 5%, 39%, 0.3);
+  border-radius: 25px;
+  
 
 }
 
@@ -60,5 +69,39 @@ header {
   font-size: 20px;
   background-color: darkgrey;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 25px;
+}
+
+
+
+.filterBtn {
+
+  color: black;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.filterBtn:hover {
+  background-color: grey;
+  color: white;
+}
+
+img {
+  border-radius: 25px;
+}
+
+#results {
+  background-color: darkgrey;
+  padding: 20px;
+  border-radius: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+a {
+  color: black !important;
 }
 
