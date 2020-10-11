@@ -20,77 +20,119 @@
 
 
 <body>
-    <!--Header with Name of the App-->
-    <header>
-        <h1 style="text-align: center; font-size: 45px;">Come Rain Or Shine</h1>
-        <h2 style="text-align: center; font-size: 25px;">Plan Your Perfect Day</h2>
-    </header>
+    <div class="wrapper">
 
-    <!--Weather Display-->
-    <div class="container-weather-display">
-        <div>
-            <img class="weatherIcon"></img>
-            <div class="description"></div>
-            <div class="locationName"></div>
-            <div class="currentDate"></div>
-            <div class="humidity"></div>
-            <div class="temp"></div>
+        <!--Header with Name of the App-->
+        <div class="row">
+            <div class="col s12">
+                <header>
+                    <div id="headertext">
+                        <h1>Come Rain and Shine</h1>
+                        <h2>Inspiration for the perfect day</h2>
+                    </div>
+                </header>
+            </div>
         </div>
-
         <!--Location Alert if User denies access-->
-    </div>
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Something went wrong!</h4>
-            <br>
-            <p id="location-required-msg">Sorry, this app requires your location to work. Please allow access to your
-                location.</p>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Something went wrong!</h4>
+                <br>
+                <p id="location-required-msg">Sorry, this app requires your location to work. Please allow
+                    access to
+                    your
+                    location.</p>
+            </div>
+            <div id="agreebtn" class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
         </div>
-        <div id="agreebtn" class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+
+
+
+        <div class="container">
+        
+            <!--Weather Display-->
+            <div class="row">
+                <div class="col s6">
+                    <div class="flow-text" id="intro">
+                        <h4>Plan your perfect day with Come Rain and Shine </h4>
+                            <br>
+                        <blockquote>We use the weather forecast to find your ideal tours,
+                            attractions or entertainment to make your life just a little bit easier.
+                        <blockquote>
+                    </div>
+                </div>
+
+                
+            <!--Intro and Instructions for the Use of the App-->
+            
+        
+                <div class="col s5">
+                    <div class="container-weather-display card">
+                        <div>
+                            <h5>Today's weather:</h5>
+                            <img class="weatherIcon"></img>
+                            <div class="description"></div>
+                            <div class="humidity"></div>
+                            <div class="temp"></div>
+                            <div class="locationName"></div>
+                            <div class="currentDate"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <!--Results-->
+            <div class="row">
+                <div class="col s12">
+                    <div id="results" style="text-align: center; margin-left: 300px; margin-right: 300px;">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Category Selection -->
+
+
+            <div class="row" id="category-buttons">
+                <div class="col s6">
+                    <img id="nature-img">
+                    <img id="nature-img" img src="./assets/images/Natural-Geographical.jpg" width="400" height="300"><br>
+                    <button class="waves-effect waves-teal btn-flat filterBtn" id="nature-btn">Natural-Geographical</button>
+
+                    <img id="outdoor-recreation-icon">
+                    <img id="outdoor-recreation-icon" img src="./assets/images/Leisure-Outdoor.jpg" width="400" height="300"><br>
+                    <button class="waves-effect waves-teal btn-flat filterBtn" id="outdoor-recreation-button">Leisure-Outdoor</button>
+
+                </div>
+
+                <div class="col s6">
+                    <img id="museum-icon">
+                    <img id="museum-icon" img src="./assets/images/insidemusem.jpg" width="400" height="300"><br>
+                    <button class="waves-effect waves-teal btn-flat filterBtn" id="museum-btn">Museum</button>
+
+                    <img id="tourist-attractions-icon">
+                    <img id="tourist-attractions-icon" img src="./assets/images/landmark.jpg" width="400" height="300"><br>
+                    <button class="waves-effect waves-teal btn-flat filterBtn" id="tourist-attractions-btn">Landmark-Attraction</button>
+                </div>
+
+                <div class="col s6 offset-s3">
+                    <img id="entertainment-icon">
+                    <img id="entertainment-icon" img src="./assets/images/restaurant.jpg" width="400" height="300"><br>
+                    <button class="waves-effect waves-teal btn-flat filterBtn" id="entertainment-btn">Restaurant</button>
+                </div>
+
+            </div>
         </div>
-    </div>
-
-    <!--Intro and Instructions for the Use of the App-->
-    <div id="intro" style="text-align: center; margin-left: 300px; margin-right: 300px;">
-        <p style="font-size: 20px;">Plan your perfect day with Come Rain Or Shine! We use your location to give you
-            weather details, and find your ideal nature spots,
-            attractions and entertainment.
-        </p>
-    </div>
-
-    <!--Results-->
-    <div id="results" style="text-align: center; margin-left: 300px; margin-right: 300px;">
-
-    </div>
-
-    <!--Category Btn -->
-    <div id="category-buttons" style="text-align: center; margin-left: 300px; margin-right: 300px;">
-        <img id="nature-img">
-        <img src="./assets/images/Natural-Geographical.jpg" width="400" height="300"><br>
-        <a class="waves-effect waves-teal btn-flat filterBtn" id="nature-btn">Natural-Geographical</a>
-        <br><br>
-        <img id="outdoor-recreation-icon">
-        <img src="./assets/images/Leisure-Outdoor.jpg" width="400" height="300"><br>
-        <a class="waves-effect waves-teal btn-flat filterBtn" id="outdoor-recreation-button">Leisure-Outdoor</a>
-        <br><br>
-        <img id="museum-icon">
-        <img src="./assets/images/insidemusem.jpg" width="400" height="300"><br>
-        <a class="waves-effect waves-teal btn-flat filterBtn" id="museum-btn">Museum</a>
-        <br><br>
-        <img id="tourist-attractions-icon">
-        <img src="./assets/images/landmark.jpg" width="400" height="300"><br>
-        <a class="waves-effect waves-teal btn-flat filterBtn" id="tourist-attractions-btn">Landmark-Attraction</a>
-        <br><br>
-        <img id="entertainment-icon">
-        <img src="./assets/images/restaurant.jpg" width="400" height="300"><br>
-        <a class="waves-effect waves-teal btn-flat filterBtn" id="entertainment-btn">Restaurant
-        </a>
     </div>
 
     <!--Script JS-->
     <script src="weather.js"></script>
     <script src="buttonLocation.js"></script>
 </body>
+
 
 </html>
