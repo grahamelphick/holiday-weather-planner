@@ -32,7 +32,7 @@ $(document).ready(function () {
         searchLocationWeather(crd.latitude, crd.longitude)
     }
     //Unsuccessful
-    function error(err) {
+    function error(err, event) {
         console.warn(`ERROR(${err.code}): ${err.message}`);
         $('.modal').modal();
         $('#modal1').modal('open');
