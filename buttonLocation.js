@@ -34,9 +34,10 @@ $(document).ready(function () {
     //Unsuccessful
     function error(err) {
         console.warn(`ERROR(${err.code}): ${err.message}`);
+        event.preventDefault();
         $('.modal').modal();
         $('#modal1').modal('open');
-        err.preventDefault();
+        event.preventDefault();
         // alert("Sorry, this app requires your location to work. Please allow access to your location.");
     }
     $("#agreebtn").click(function(){
