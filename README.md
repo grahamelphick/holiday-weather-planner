@@ -71,7 +71,6 @@ To view the App, please click on the link below:
 
 * The User can choose a location with a free-text input
 * The User can choose specific dates
-* The results contain a link leading directly to the specific webpage 
-* Fit App on one screen without scrolling needed
+* The results contain a link leading directly to the specific webpage
+* Fit the app on one screen without scrolling needed
 * The User can use a filter to narrow the search
-* Results being only displayed when open
