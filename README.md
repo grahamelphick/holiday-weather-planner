@@ -5,9 +5,9 @@ Application that generates the current weather and displays activities based on 
 ## Table of contents
 * [ User story](#User%20story)
 * [Technologies](#Technologies)
-* [Screenshot](#Screenshot)
+* [Screenshot](#Screenshots)
 * [Setup](#Setup)
-* [App Link](#App Link)
+* [App Link](#App%Link)
 * [Improvement](#Improvement)
 
 
@@ -35,11 +35,12 @@ As a User I would like to plan a great day ahead without any effort. Before maki
 
 <br>
 
-### Screenshot 
+### Screenshots 
 
 <br>
 
-![Application Screenshot to be Updated](./assets/images/App-Screenshot.png)
+(./assets/screenshots/app-screenshot1.png)
+(./assets/screenshots/app-screenshot2.png)
 
 <br>
 
@@ -60,9 +61,10 @@ Each of this categories gives the user a selection of 10 different activities wi
 
 <br>
 
-### To view the App, please click on the link below
+### App Link
+To view the App, please click on the link below:
 
-[Rain or Shine App](https://grahamelphick.github.io/holiday-weather-planner/)
+[Come Rain Or Shine App](https://grahamelphick.github.io/holiday-weather-planner/)
 
 
 ### Improvement
