@@ -1,4 +1,4 @@
-# Activity Planner
+# Come Rain Or Shine
 Application that generates the current weather and displays activities based on the User's location and category choice. 
 <br>
 <br>
