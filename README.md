@@ -7,6 +7,7 @@ Application that generates the current weather and displays activities based on 
 * [Technologies](#Technologies)
 * [Screenshot](#Screenshot)
 * [Setup](#Setup)
+* [App Link](#App Link)
 * [Improvement](#Improvement)
 
 
@@ -16,7 +17,7 @@ Application that generates the current weather and displays activities based on 
 
 ### User story
 
-As a User I would like to plan a great day ahead without any effort. Before making any desicion what to do I need to know what the weather forcast is to I can base my choice on it. I would like to choose from different categories and get a small amount of activities and places to visit I can choose from.
+As a User I would like to plan a great day ahead without any effort. Before making any decision what to do I need to know what the weather forecast is so I can base my choice on it. I would like to choose from different categories and get a small amount of activities and places to visit that I can choose from.
 
 <br>
 
@@ -55,9 +56,13 @@ The User can choose from five different Categories:
 * Landmark - Attraction
 * Restaurant
 
-Each of this categorizes gives the user a selection of 10 different activities within a 30km radius of his location.
+Each of this categories gives the user a selection of 10 different activities within a 30km radius of his location.
 
 <br>
+
+### To view the App, please click on the link below
+
+[Rain or Shine App](https://grahamelphick.github.io/holiday-weather-planner/)
 
 
 ### Improvement
@@ -68,4 +73,3 @@ Each of this categorizes gives the user a selection of 10 different activities w
 * Fit App on one screen without scrolling needed
 * The User can use a filter to narrow the search
 * Results being only displayed when open
-

@@ -110,7 +110,7 @@ $(document).ready(function () {
     //On Click functions for starting the search
     $(".filterBtn").on("click", function () {
         console.log("btn clicked");
-        introDiv.style.display = "none";
+        introDiv.style.display = "intro";
         var what = this.textContent;
         console.log(what, where);
         requestData(what, where);

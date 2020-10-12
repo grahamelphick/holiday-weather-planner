@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Day Activity Planner</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -51,26 +51,27 @@
 
 
 
-            <!--Weather Display-->
+            <!--Intro Display-->
             <div class="row">
-                <div class="col s6">
+                <div class="col s8">
                     <div class="flow-text" id="intro">
                         <h4>Plan your perfect day with Come Rain Or Shine </h4>
                         <br>
                         <blockquote>We use the weather forecast to find your ideal tours,
                             attractions or entertainment to make your life just a little bit easier.
                             <blockquote>
+
                     </div>
                 </div>
 
 
 
 
-                <!--Intro and Instructions for the Use of the App-->
+                <!--Weather Info Display-->
 
 
                 <div class="col s4">
-                    <div class="container-weather-display card">
+                    <div class="container-weather-display">
                         <div>
                             <h5>Today's weather:</h5>
                             <img class="weatherIcon"></img>
@@ -82,11 +83,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-
-                <!--Results-->
-
-                <div class="col s4">
+            <!--Results-->
+            <div class="container">
+                <div class="row"> </div>
+                <div class="col 12">
                     <div id="results"> Why not visit:
                     </div>
                 </div>
@@ -147,8 +149,10 @@
     </div>
 
     <!--Script JS-->
+
     <script src="weather.js"></script>
     <script src="buttonLocation.js"></script>
+
 </body>
 
 
