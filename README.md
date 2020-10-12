@@ -39,8 +39,8 @@ As a User I would like to plan a great day ahead without any effort. Before maki
 
 <br>
 
-(./assets/screenshots/app-screenshot1.png)
-(./assets/screenshots/app-screenshot2.png)
+<img src="./assets/screenshots/app-screenshot1.png" alt="landing page">
+<img src="./assets/screenshots/app-screenshot2.png" alt="category results">
 
 <br>
 
