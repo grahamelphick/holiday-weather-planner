@@ -7,7 +7,7 @@ Application that generates the current weather and displays activities based on 
 * [Technologies](#Technologies)
 * [Screenshot](#Screenshot)
 * [Setup](#Setup)
-* [App Link] (#App Link)
+* [App Link](#App Link)
 * [Improvement](#Improvement)
 
 
@@ -56,7 +56,7 @@ The User can choose from five different Categories:
 * Landmark - Attraction
 * Restaurant
 
-Each of this categories gives the user a selection of at most 10 different activities within a 30km radius of his location.
+Each of this categories gives the user a selection of 10 different activities within a 30km radius of his location.
 
 <br>
 
