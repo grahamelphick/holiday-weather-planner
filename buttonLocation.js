@@ -36,13 +36,14 @@ $(document).ready(function () {
         console.warn(`ERROR(${err.code}): ${err.message}`);
         $('.modal').modal();
         $('#modal1').modal('open');
-        err.preventDefault();
+        event.preventDefault();
         // alert("Sorry, this app requires your location to work. Please allow access to your location.");
     }
     $("#agreebtn").click(function(){
         window.location.reload();
     });
-    navigator.geolocation.getCurrentPosition(success, error, options);
+    navigator.geolocation.getCurrentPosition(success, error, options, event);
+    event.preventDefault();
 
 
     //API Key: "svaY28TziQvERQtErWdRG4N5KBUlJ4npN36uBx92V0"
