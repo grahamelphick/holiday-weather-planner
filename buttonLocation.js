@@ -21,7 +21,6 @@ $(document).ready(function () {
         maximumAge: 0
     };
 
-    navigator.geolocation.getCurrentPosition(success, error, options);
 
     //function for retrieving the geodata from the User
     //Successful
@@ -44,6 +43,8 @@ $(document).ready(function () {
     $("#agreebtn").click(function(){
         window.location.reload();
     });
+    
+    navigator.geolocation.getCurrentPosition(success, error, options);
 
 
     //API Key: "svaY28TziQvERQtErWdRG4N5KBUlJ4npN36uBx92V0"
