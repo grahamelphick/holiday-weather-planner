@@ -36,10 +36,10 @@ $(document).ready(function () {
         console.warn(`ERROR(${err.code}): ${err.message}`);
         $('.modal').modal();
         $('#modal1').modal('open');
-        event.preventDefault;
         // alert("Sorry, this app requires your location to work. Please allow access to your location.");
     }
-    $("#agreebtn").click(function(){
+    $("#agreebtn").click(function(event){
+        event.preventDefault();
         window.location.reload();
     });
     navigator.geolocation.getCurrentPosition(success, error, options);
