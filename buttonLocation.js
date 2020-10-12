@@ -32,11 +32,11 @@ $(document).ready(function () {
         searchLocationWeather(crd.latitude, crd.longitude)
     }
     //Unsuccessful
-    function error(err, event) {
+    function error(err) {
         console.warn(`ERROR(${err.code}): ${err.message}`);
         $('.modal').modal();
         $('#modal1').modal('open');
-        event.preventDefault();
+        err.preventDefault();
         // alert("Sorry, this app requires your location to work. Please allow access to your location.");
     }
     $("#agreebtn").click(function(){
