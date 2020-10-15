@@ -9,7 +9,7 @@ Application that generates the current weather and displays activities based on 
 * [Setup](#Setup)
 * [App Link](#App%Link)
 * [Improvement](#Improvement)
-
+* [Deployed Project](#Deployed%20Project)
 
 
 <br>
@@ -74,3 +74,7 @@ To view the App, please click on the link below:
 * The results contain a link leading directly to the specific webpage
 * Fit the app on one screen without scrolling needed
 * The User can use a filter to narrow the search
+
+
+### Deployed Project
+https://grahamelphick.github.io/holiday-weather-planner/
